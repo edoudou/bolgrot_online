@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
 }
 
 .App-logo {
@@ -9,7 +12,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,4 +31,75 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.board {
+  background-color: grey;
+  height: 700px;
+  width: 1080px;
+  margin: auto;
+}
+
+.cell {
+  fill : #EEEEEE;
+  stroke: #282c34;
+}
+
+.cell[data-odd=true]
+{
+  fill : #DEDEDE;
+}
+
+
+.player {
+  fill : #FF0000;
+  stroke: #282c34;
+}
+
+.rune {
+  fill : transparent;
+  stroke-width: 2px;
+  stroke: purple;
+}
+
+.spirit {
+  fill : #00FF00;
+  stroke: #282c34;
+}
+
+.playableCell {
+  fill : #1111DD;
+}
+
+.playableCell:hover {
+  fill : #1111FF;
+  cursor : pointer;
+}
+
+.status {
+  height: 100px;
+  width: 100px;
+  background-color: #111111;
+  border: 2px black solid;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.spell {
+  background-color: #111111;
+  height: 100px;
+  width : 100px;
+  border: 2px black solid;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.end-btn {
+  background-color: #111111;
+  height: 50px;
+  width : 100px;
+  border: 2px black solid;
+  display: inline-block;
+  cursor: pointer;
+  color : white;
 }
